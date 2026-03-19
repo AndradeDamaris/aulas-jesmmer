@@ -1,11 +1,8 @@
 import math
 
-x1 = float(input("Informe o valor de x1: "))
-y1 = float(input("Informe o valor de y1: "))
+x1, y1 = map(float, input().split())
+x2, y2 = map(float, input().split())
 
-x2 = float(input("Informe o valor de x2: "))
-y2 = float(input("Informe o valor de y2: "))
+distancia = math.sqrt((x2-x1)**2 + (y2-y1)**2)
 
-total = math.sqrt((x2-x1)**2 + (y2-y1)**2)
-
-print(f'A distância é {total:.4f}')
+print(f'{distancia:.4f}')
